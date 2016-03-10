@@ -8,7 +8,7 @@ var {
     View,
     TouchableOpacity,
     Modal,
-    PickerIOS,
+    DatePickerIOS,
     Dimensions
 } = React;
 
