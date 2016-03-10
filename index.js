@@ -96,7 +96,6 @@ var Component = React.createClass({
                   timeZoneOffsetInMinutes={this.props.timeZoneOffset}
                   onDateChange={(date) => this.setState({selectedDate: date})}
                   />
-                </PickerIOS>
               </View>
 
             </View>
