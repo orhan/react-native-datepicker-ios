@@ -24,7 +24,7 @@ var Component = React.createClass({
         color: this.props.color || '#007AFF',
         pickerBackgroundColor: this.props.pickerBackgroundColor || '#F5FCFF',
         modalVisible: false,
-        selectedDate: this.state.selectedDate || this.props.date,
+        selectedDate: this.props.date,
         pickerHeight: 0,
         buttonColor: this.props.buttonColor || '#007AFF',
       };
@@ -88,7 +88,7 @@ var Component = React.createClass({
                 {/*Model body*/}
                 <DatePickerIOS
                   ref={'picker'}
-                  date={this.state.date}
+                  date={this.state.selectedDate}
                   mode={this.props.mode}
                   minuteInterval={this.props.minuteInterval}
                   maximumDate={this.props.maximumDate}
