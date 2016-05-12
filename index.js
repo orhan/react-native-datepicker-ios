@@ -3,13 +3,13 @@
 
 var React = require('react');
 import {
-    StyleSheet,
-    Text,
-    View,
-    TouchableOpacity,
-    Modal,
-    DatePickerIOS,
-    Dimensions
+  StyleSheet,
+  Text,
+  View,
+  TouchableOpacity,
+  Modal,
+  DatePickerIOS,
+  Dimensions
 } from 'react-native';
 
 var SCREEN_WIDTH = Dimensions.get('window').width;
@@ -59,7 +59,7 @@ var Component = React.createClass({
     render: function() {
       return (
         <Modal
-          animated={true}
+          animationType="slide"
           transparent={true}
           visible={this.state.modalVisible}>
 
